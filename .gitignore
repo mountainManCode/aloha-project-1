@@ -9,3 +9,6 @@ ehthumbs.db
 *.Trashes
 # Ignore npm packages
 node_modules/
+
+aloha-desktop-stretch.png
+aloha-mobile.png
