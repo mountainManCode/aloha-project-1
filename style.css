@@ -73,7 +73,7 @@ table {
 }
 
 @font-face {
-	font-family: 'fonts/Raleway';
+	font-family: 'Raleway';
 	src: url('fonts/Raleway-Light.eot');
 	src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
 		url('fonts/Raleway-Light.woff2') format('woff2'),
@@ -117,7 +117,7 @@ table {
 }
 
 @font-face {
-	font-family: 'fonts/Playfair Display';
+	font-family: 'Playfair Display';
 	src: url('fonts/PlayfairDisplay-Regular.eot');
 	src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
 		url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
@@ -143,14 +143,15 @@ table {
 body {
 	max-width: 100%;
 	text-align: center;
-	font-family: 'fonts/Raleway';
+	font-family: 'Raleway', sans-serif;
 	color: #2d2d2d;
 }
 
-h2 {
-	font-family: 'Playfair Display';
+h1 h2 h3 {
+	font-family: 'Playfair Display', serif;
 	font-size: 2.5rem;
 	color: #2d2d2d;
+	text-align: center;
 }
 
 .menu {
@@ -158,31 +159,22 @@ h2 {
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
-	max-width: 100%;
-}
-
-.logo {
 }
 
 .navigation {
 	align-self: center;
-
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	align-content: space-around;
 	text-transform: uppercase;
-	background-color: white;
+	font-size: 1.25rem;
 }
 
-.navigation a:link {
+a:link {
   color: #e2574c; 
-  text-decoration: none;
+	text-decoration: none;
 }
 
-.cart {
+a:hover {
+	color: #b64036;
 }
-
 
 .banner {
 	color: #fff;
@@ -195,110 +187,172 @@ h2 {
 		rgba(0, 0, 0, 0.40)),
 	url("images/banner-girl.png") center 6rem/15.5rem no-repeat,
 	url("images/flower-bkgd.jpg") center / cover;
+}
+
+	.banner__title {
+		font-family: 'Playfair Display';
+		font-size: 3.25rem;
+		padding: 1.5rem;
+	}
+	
+	.banner__collection {
+		text-align: center;
+		font-size: 1.75rem;
+		text-transform: uppercase;
+		padding: 1.5rem;
 	}
 
-.main-title {
-  font-size: 3.25rem;
-  text-align: center;
-  padding: 1.5rem;
+.about {
+	padding: 3rem;
 }
 
-.collection {
-	text-align: center;
-	font-size: 1.5rem;
-	padding: 1.5rem;
-}
+	.about h2 {
+		font-family: 'Playfair Display';
+		font-size: 2.5rem;
+		padding: 1rem;
+	}
 
-.hand-crafted {
-	padding: 8rem;
-}
+	.about__hand-crafted {
+		font-style: italic;
+	}
 
-.styles {
+	.about__styles {
+		font-weight: bold;
+	}
+
+.shop {
 	color: #fff;
 	/* text-align: center; */
 	text-transform: uppercase;
+	font-size: 2rem;
 	grid-gap: 0.25rem;
 }
 
-.mens {
-	padding: 8rem 0;
-	background: 
-	linear-gradient(
-		rgba(0, 0, 0, 0.20), 
-		rgba(0, 0, 0, 0.20)),
-	url("images/mens-category.jpg") center / cover;
-}
+	.shop a:link {
+		color: #fff;
+	}
 
-.trends {
-	padding: 8rem 0;
-	background: 
-	linear-gradient(
-		rgba(0, 0, 0, 0.20), 
-		rgba(0, 0, 0, 0.20)),
-	url("images/trends-category.jpg") center / cover;
-}
+	.shop a:hover {
+		color: #b64036;
+	}
 
-.glasses {
-	padding: 8rem 0;
-	background: 
-	linear-gradient(
-		rgba(0, 0, 0, 0.20), 
-		rgba(0, 0, 0, 0.20)),
-	url("images/glasses-category.jpg") center / cover;
-}
+	.shop__mens {
+		padding: 8rem 0;
+		background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/mens-category.jpg") center / cover;
+	}
 
-.sale {
-	padding: 8rem 0;
-	background: 
-	linear-gradient(
-		rgba(0, 0, 0, 0.20), 
-		rgba(0, 0, 0, 0.20)),
-	url("images/sale-category.jpg") center / cover;
-}
+	.shop__trends {
+		padding: 8rem 0;
+		background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/trends-category.jpg") center / cover;
+	}
 
-.bags {
-	padding: 8rem 0;
-	background: 
-	linear-gradient(
-		rgba(0, 0, 0, 0.20), 
-		rgba(0, 0, 0, 0.20)),
-	url("images/bags-category.jpg") center / cover;
-}
+	.shop__glasses {
+		padding: 8rem 0;
+		background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/glasses-category.jpg") center / cover;
+	}
 
-.womens {
-	padding: 8rem 0;
-	background: 
-	linear-gradient(
-		rgba(0, 0, 0, 0.20), 
-		rgba(0, 0, 0, 0.20)),
-	url("images/womens-category.jpg") center / cover;
-}
+	.shop__sale {
+		padding: 8rem 0;
+		background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/sale-category.jpg") center / cover;
+	}
 
-.products {
+	.shop__bags {
+		padding: 8rem 0;
+		background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/bags-category.jpg") center / cover;
+	}
+
+	.shop__womens {
+		padding: 8rem 0;
+		background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/womens-category.jpg") center / cover;
+	}
+
+	.featured {
+		padding: 3rem;
+	}
 	
-}
+		.featured h2 {
+			font-family: 'Playfair Display';
+			font-size: 2.5rem;
+			padding: 1rem;
+		}
+	
+		.featured__most-loved {
+			font-style: italic;
+		}
+	
+		.featured__products {
+			font-weight: bold;
+		}
+	
+		.main-carousel {
+			padding: 1rem;
+		}
 
-.sign-up {
+		.carousel-cell h3 {
+			font-family: 'Playfair Display';
+			font-size: 1.5rem;
+			padding: .75rem;
+			color: #e2574c;
+		}
+
+		.featured p {
+			font-family: 'Raleway';
+			font-size: 1rem;
+			color: #969696;
+			text-transform: uppercase;
+			padding: .5rem;
+		}
+
+.updates {
 	color: #fff;
+	padding: 2rem 0;
 	display: flex;
 	flex-flow: column	nowrap;
 	align-items: center;
-
-	padding: 2rem 0;
 	background: 
 	linear-gradient(
 		rgba(0, 0, 0, 0.20), 
 		rgba(0, 0, 0, 0.20)),
 	url("images/wave-bkgd.jpg") bottom / cover;
+	padding: 3rem;
 }
 
-.sign-up h2 {
-	color: #fff;
-}
+	.updates h2 {
+		font-family: 'Playfair Display';
+		font-size: 2.5rem;
+	}
 
-.sign-up p {
-	padding: 2rem;
-}
+	.updates__sign-up {
+		font-style: italic;
+	}
+
+	.updates__updates {
+		font-weight: bold;
+	}
 
 .form {
 	border: 5px solid #fff;
@@ -309,66 +363,46 @@ h2 {
 	align-content: center;
 	max-width: 80vw;
 	background-color: #fff;
-	
 }
 
-input {
-	width: 25vw;
-	border: none;
-}
+	input {
+		width: 25vw;
+		border: none;
+	}
 
-.btn {
-	border-radius: 100px;
-	color: #fff;
-	background-color: #e2574c;
-}
+	.btn {
+		border-radius: 100px;
+		color: #fff;
+		background-color: #e2574c;
+	}
 
-button:hover {
-	background-color: #b64036;
-}
-
-/* .form {
-	border: 5px solid white;
-	border-radius: 100px;
-	display: inline-block;
-	position: relative;
-	width: 25%;
-	z-index: 1;
-	
-}
-
-input {
-	width: 80%;
-	align-self: left;
-	left: 10%;
-}
-
-.btn {
-	position: absolute;
-	left: 60%;
-	border-radius: 100px;
-	width: 5%;
-	z-index: 5;
-}  */
-
-
+	button:hover {
+		background-color: #b64036;
+	}
 
 .footer {
+	line-height: 150%;
 	text-align: left;
 	background-color: #242424;
 	color: #fff;
-	/* display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between; */
+	margin-top: .75rem;
 }
+	.address__spacing {
+		line-height: 300%;
+	}
 
+	.footer a {
+		text-decoration: underline;
+		color: #fff;
+	}
 
-.collection {
-  text-transform: uppercase;
-  text-align: center;
-}
+	.footer__address li {
+		font-family: 'Playfair Display'
+	}
 
-
+	.address {
+		color: #969696;
+	}
 
 /* ----- Breakpoints Below -----*/
 
@@ -385,109 +419,119 @@ input {
 		display: flex;
 		flex-flow: row wrap;
 		max-width: 100%;
+		padding: 0.7rem 0.7rem;
 	}
 
 		.logo {
-			max-width: 15vw;
+			max-width: 33vw;
+			padding: 1rem .5rem;
 		}
 
 		.navigation {
+			/* text-transform: uppercase;	 */
 			order: 3;
 			flex: 0 0 100%;
 			display: flex;
 			flex-flow: row nowrap;
 			justify-content: space-around;
+			align-content: center;
+			border-top: 2px solid #d7d7d7;
+			padding: 1rem 0;
 		}
 
 		.cart {
 			order: 1;
-			max-width: 10vw;
+			max-width: 13vw;
+			padding: 1rem .5rem;
 		}
 
+.about p {
+	padding: 1rem 1rem;
+	line-height: 175%;
+}
 
-	/* .banner {
-		padding: 15rem 0;
-		width: 100%;
-		background: 
-		linear-gradient(
-			rgba(0, 0, 0, 0.40), 
-			rgba(0, 0, 0, 0.40)),
-		url("images/banner-girl.png") center 7rem/16rem no-repeat,
-		url("images/flower-bkgd.jpg") center / cover;
-	} */
-
-		/* .main-title {
-		font-size: 2rem;
-		text-align: center;
-		padding: 1rem;
-	} */
-
-.styles {
+.shop {
 	display: grid;
 	grid-template: 25% auto / 50% auto;
 	max-width: 100%;
 }
 
-	.mens {
+	.shop__mens {
 		grid-area: 1 / 1 / 2 / 3;
 	}
 
-	.trends {
+	.shop__trends {
 		grid-area: 2 / 1 / 3 / 2;
 	}
 
-	.glasses {
+	.shop__glasses {
 		grid-area: 2 / 2 / 3 / 3;
 	}
 
-	.sale {
+	.shop__sale {
 		grid-area: 3 / 1 / 4 / 2;
 	}
 
-	.bags {
+	.shop__bags {
 		grid-area: 3 / 2 / 4 / 3;
 	}
 
-	.womens {
+	.shop__womens {
 		grid-area: 4 / 1 / 5 / 3;
 	}
 
-.products {
+.featured {
 	padding: 20rem auto;
 }	
 
-.carousel-cell {
-	width: 100%;
-	margin: 0 5px;	
+	.carousel-cell {
+		width: 100%;
+		margin: 0 0px;	
+	}
+
+.updates p {
+	padding: 2rem 1rem;
+	line-height: 175%;
 }
 
 .footer {
+	max-width: 100%;
+	padding: 1.5rem 0.5rem;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
-	max-width: 100%;
 }
 
-	.address {
+	.footer__address {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-between;
+		align-content: space-between;
+		text-align: center;
 	}
 
 	.social {
-		color: white;
+		font-family: 'Raleway light';
+		color: #fff;
+		padding: 1.5rem 0;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
 	}
 
-	.hidden {
-		visibility: hidden;
+	.social li {
+		display: inline-block;
+		max-width: 100%;
 	}
 
+	.hidden {
+		visibility: hidden;
+		font-size: 5px;
+	}
 }
+
 @media all and (min-width: 600px) {
 	html {
 		font-size: 16px;
@@ -507,58 +551,59 @@ input {
 	}
 	
 	.logo {
-		flex: 1 1 25%;
+		flex: 1 1 35%;
 		max-width: 17vw;
 		max-height: 12vw;
 	}
 	
 	.navigation {
-		align-self: center;
-		flex: 1 1 62%;
+		text-decoration-line: none;
 		max-width: 75vw;
-		/* display: flex;
+		align-self: center;
+		flex: 1 1 40%;
+		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-around;
-		align-content: space-around; */
+		align-content: space-around;	
 	}
 
 	.cart {
-		flex: 1 1 3%;
-		max-width: 8vw;
+		flex: 1 1 25%;
+		max-width: 7vw;
 	}
 
-	.styles {
+	.about p {
+		padding: 1rem 6rem;
+		line-height: 175%;
+	}
+
+	.shop {
 		display: grid;
 		grid-template: 50% auto / 25% auto;
 	}
 	
-		.mens {
+		.shop__mens {
 			grid-area: 1 / 1 / 2 / 3;
 		}
 		
-		.trends {
+		.shop__trends {
 			grid-area: 1 / 3 / 2 / 4;
-			background-color: blue;
 		}
 		
-		.glasses {
+		.shop__glasses {
 			grid-area: 1 / 4 / 2 / 5;
-			background-color: silver;
 		}
 		
-		.sale {
+		.shop__sale {
 			grid-area: 2 / 1 / 3 / 2;
-			background-color: orange;
 		}
 		
-		.bags {
+		.shop__bags {
 			grid-area: 2 / 2 / 3 / 3;
-			background-color: green;
 		}
 		
-		.womens {
+		.shop__womens {
 			grid-area: 2 / 3 / 3 / 5;
-			background-color: pink;
 		}
 
 	.carousel-cell {
@@ -566,7 +611,13 @@ input {
 		margin: 0 5px;	
 	}
 
+	.updates p {
+		padding: 3rem 6rem;
+		line-height: 175%;
+	}
+
 	.footer {
+		padding: 2.5rem 2rem;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
@@ -574,7 +625,7 @@ input {
 		align-items: center;
 	}
 	
-		.address {
+		.footer__address {
 			display: flex;
 			flex-flow: column nowrap;
 			justify-content: space-between;
@@ -583,37 +634,30 @@ input {
 		.social {
 			display: flex;
 			flex-flow: column nowrap;
-			justify-content: center;
-			align-items: flex-end;
-			align-content: center;
+			justify-content: space-around;
+			align-items: flex-start;
+			align-content: space-between;
 		}
 
 		.social span {
-			padding-left	: 20px;
+			padding-left: 20px;
 		}
-
-
-
-	/* .banner {
-		justify-content: center;
-		padding: 12rem 0;
-		width: 100%;
-		background: 
-		linear-gradient(
-			rgba(0, 0, 0, 0.40), 
-			rgba(0, 0, 0, 0.40)),
-		url("images/banner-girl.png") center 5rem/15rem no-repeat,
-		url("images/flower-bkgd.jpg") center / cover no-repeat;
-	} */
-
 }
 
 @media all and (min-width: 1240px) {
+
+	.about p {
+		padding: 1rem 12rem;
+		line-height: 175%;
+	}
 
 	.carousel-cell {
 		width: 25%;
 		margin: 0 5px;	
 	}
 	
-
+	.updates p {
+		padding: 3rem 12rem;
+		line-height: 175%;
+	}
 }
