@@ -1,4 +1,4 @@
-    # Aloha Apparel Co.
+  # Aloha Apparel Co.
 
   Aloha Apparel Co. is a homepage I created to showcase my new and relevant skills of HTML5, CSS3, and a little JQuery and Javascript.
 
