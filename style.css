@@ -155,14 +155,22 @@ h1 h2 h3 {
 }
 
 .menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 }
 
 .navigation {
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 	text-transform: uppercase;
 	font-size: 1.25rem;
 }
@@ -176,11 +184,47 @@ a:hover {
 	color: #b64036;
 }
 
+.cart {
+	display: inline-block;
+	position: relative;
+}
+
+.count {
+	background-color: #e2574c;
+	color: #fff;
+	position: absolute;
+	top: 22px;
+	right: 48px;
+	height: 15px;
+	width: 15px;
+	z-index: 10;
+}
+
 .banner {
 	color: #fff;
 	text-align: center;
 	padding: 14rem 0;
 	width: 100%;
+	background: 
+	-webkit-gradient(
+		linear, 
+		left top, left bottom, 
+		from(rgba(0, 0, 0, 0.40)), 
+		to(rgba(0, 0, 0, 0.40))),
+	url("images/banner-girl.png") center 6rem/15.5rem no-repeat,
+	url("images/flower-bkgd.jpg") center / cover;
+	background: 
+	-webkit-linear-gradient(
+		rgba(0, 0, 0, 0.40), 
+		rgba(0, 0, 0, 0.40)),
+	url("images/banner-girl.png") center 6rem/15.5rem no-repeat,
+	url("images/flower-bkgd.jpg") center / cover;
+	background: 
+	-o-linear-gradient(
+		rgba(0, 0, 0, 0.40), 
+		rgba(0, 0, 0, 0.40)),
+	url("images/banner-girl.png") center 6rem/15.5rem no-repeat,
+	url("images/flower-bkgd.jpg") center / cover;
 	background: 
 	linear-gradient(
 		rgba(0, 0, 0, 0.40), 
@@ -239,6 +283,23 @@ a:hover {
 	.shop__mens {
 		padding: 8rem 0;
 		background: 
+		-webkit-gradient(
+			linear, 
+			left top, left bottom, 
+			from(rgba(0, 0, 0, 0.20)), 
+			to(rgba(0, 0, 0, 0.20))),
+		url("images/mens-category.jpg") center / cover;
+		background: 
+		-webkit-linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/mens-category.jpg") center / cover;
+		background: 
+		-o-linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/mens-category.jpg") center / cover;
+		background: 
 		linear-gradient(
 			rgba(0, 0, 0, 0.20), 
 			rgba(0, 0, 0, 0.20)),
@@ -247,6 +308,23 @@ a:hover {
 
 	.shop__trends {
 		padding: 8rem 0;
+		background: 
+		-webkit-gradient(
+			linear, 
+			left top, left bottom, 
+			from(rgba(0, 0, 0, 0.20)), 
+			to(rgba(0, 0, 0, 0.20))),
+		url("images/trends-category.jpg") center / cover;
+		background: 
+		-webkit-linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/trends-category.jpg") center / cover;
+		background: 
+		-o-linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/trends-category.jpg") center / cover;
 		background: 
 		linear-gradient(
 			rgba(0, 0, 0, 0.20), 
@@ -257,6 +335,23 @@ a:hover {
 	.shop__glasses {
 		padding: 8rem 0;
 		background: 
+		-webkit-gradient(
+			linear, 
+			left top, left bottom, 
+			from(rgba(0, 0, 0, 0.20)), 
+			to(rgba(0, 0, 0, 0.20))),
+		url("images/glasses-category.jpg") center / cover;
+		background: 
+		-webkit-linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/glasses-category.jpg") center / cover;
+		background: 
+		-o-linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/glasses-category.jpg") center / cover;
+		background: 
 		linear-gradient(
 			rgba(0, 0, 0, 0.20), 
 			rgba(0, 0, 0, 0.20)),
@@ -265,6 +360,23 @@ a:hover {
 
 	.shop__sale {
 		padding: 8rem 0;
+		background: 
+		-webkit-gradient(
+			linear, 
+			left top, left bottom, 
+			from(rgba(0, 0, 0, 0.20)), 
+			to(rgba(0, 0, 0, 0.20))),
+		url("images/sale-category.jpg") center / cover;
+		background: 
+		-webkit-linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/sale-category.jpg") center / cover;
+		background: 
+		-o-linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/sale-category.jpg") center / cover;
 		background: 
 		linear-gradient(
 			rgba(0, 0, 0, 0.20), 
@@ -275,6 +387,23 @@ a:hover {
 	.shop__bags {
 		padding: 8rem 0;
 		background: 
+		-webkit-gradient(
+			linear, 
+			left top, left bottom, 
+			from(rgba(0, 0, 0, 0.20)), 
+			to(rgba(0, 0, 0, 0.20))),
+		url("images/bags-category.jpg") center / cover;
+		background: 
+		-webkit-linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/bags-category.jpg") center / cover;
+		background: 
+		-o-linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/bags-category.jpg") center / cover;
+		background: 
 		linear-gradient(
 			rgba(0, 0, 0, 0.20), 
 			rgba(0, 0, 0, 0.20)),
@@ -283,6 +412,23 @@ a:hover {
 
 	.shop__womens {
 		padding: 8rem 0;
+		background: 
+		-webkit-gradient(
+			linear, 
+			left top, left bottom, 
+			from(rgba(0, 0, 0, 0.20)), 
+			to(rgba(0, 0, 0, 0.20))),
+		url("images/womens-category.jpg") center / cover;
+		background: 
+		-webkit-linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/womens-category.jpg") center / cover;
+		background: 
+		-o-linear-gradient(
+			rgba(0, 0, 0, 0.20), 
+			rgba(0, 0, 0, 0.20)),
+		url("images/womens-category.jpg") center / cover;
 		background: 
 		linear-gradient(
 			rgba(0, 0, 0, 0.20), 
@@ -327,12 +473,43 @@ a:hover {
 			padding: .5rem;
 		}
 
+		.featured button {
+			background-color: #000;
+			color: #fff;
+			border: 1px solid #000;
+			border-radius: 100px;
+		}
+
 .updates {
 	color: #fff;
 	padding: 2rem 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column	nowrap;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column	nowrap;
+	        flex-flow: column	nowrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background: 
+	-webkit-gradient(
+		linear, 
+		left top, left bottom, 
+		from(rgba(0, 0, 0, 0.20)), 
+		to(rgba(0, 0, 0, 0.20))),
+	url("images/wave-bkgd.jpg") bottom / cover;
+	background: 
+	-webkit-linear-gradient(
+		rgba(0, 0, 0, 0.20), 
+		rgba(0, 0, 0, 0.20)),
+	url("images/wave-bkgd.jpg") bottom / cover;
+	background: 
+	-o-linear-gradient(
+		rgba(0, 0, 0, 0.20), 
+		rgba(0, 0, 0, 0.20)),
+	url("images/wave-bkgd.jpg") bottom / cover;
 	background: 
 	linear-gradient(
 		rgba(0, 0, 0, 0.20), 
@@ -357,10 +534,17 @@ a:hover {
 .form {
 	border: 5px solid #fff;
 	border-radius: 100px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex: 1 1 100%;
-	justify-content: center;
-	align-content: center;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 100%;
+	        flex: 1 1 100%;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 	max-width: 80vw;
 	background-color: #fff;
 }
@@ -416,8 +600,13 @@ a:hover {
 	}
 
 	.menu {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: row wrap;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row wrap;
+		        flex-flow: row wrap;
 		max-width: 100%;
 		padding: 0.7rem 0.7rem;
 	}
@@ -429,18 +618,31 @@ a:hover {
 
 		.navigation {
 			/* text-transform: uppercase;	 */
-			order: 3;
-			flex: 0 0 100%;
+			-webkit-box-ordinal-group: 4;
+			    -ms-flex-order: 3;
+			        order: 3;
+			-webkit-box-flex: 0;
+			    -ms-flex: 0 0 100%;
+			        flex: 0 0 100%;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-flow: row nowrap;
-			justify-content: space-around;
-			align-content: center;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			    -ms-flex-flow: row nowrap;
+			        flex-flow: row nowrap;
+			-ms-flex-pack: distribute;
+			    justify-content: space-around;
+			-ms-flex-line-pack: center;
+			    align-content: center;
 			border-top: 2px solid #d7d7d7;
 			padding: 1rem 0;
 		}
 
 		.cart {
-			order: 1;
+			-webkit-box-ordinal-group: 2;
+			    -ms-flex-order: 1;
+			        order: 1;
 			max-width: 13vw;
 			padding: 1rem .5rem;
 		}
@@ -486,7 +688,12 @@ a:hover {
 
 	.carousel-cell {
 		width: 100%;
-		margin: 0 0px;	
+		margin: 0 0;	
+	}
+
+	.carousel-cell img {
+		width: 100%;
+		height: auto;
 	}
 
 .updates p {
@@ -497,18 +704,36 @@ a:hover {
 .footer {
 	max-width: 100%;
 	padding: 1.5rem 0.5rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 	.footer__address {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-between;
-		align-content: space-between;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column nowrap;
+		        flex-flow: column nowrap;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-ms-flex-line-pack: justify;
+		    align-content: space-between;
 		text-align: center;
 	}
 
@@ -516,9 +741,16 @@ a:hover {
 		font-family: 'Raleway light';
 		color: #fff;
 		padding: 1.5rem 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row nowrap;
+		        flex-flow: row nowrap;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 
 	.social li {
@@ -542,33 +774,62 @@ a:hover {
 	}
 
 	.menu {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0px;
+		z-index: 999;
+		background-color: #fff;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-content: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row nowrap;
+		        flex-flow: row nowrap;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-ms-flex-line-pack: center;
+		    align-content: center;
 		max-width: 100%;
 		padding: 1.5rem 1.5rem;
 	}
 	
 	.logo {
-		flex: 1 1 35%;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 35%;
+		        flex: 1 1 35%;
 		max-width: 17vw;
 		max-height: 12vw;
 	}
 	
 	.navigation {
-		text-decoration-line: none;
-		max-width: 75vw;
-		align-self: center;
-		flex: 1 1 40%;
+		-webkit-text-decoration-line: none;
+		        text-decoration-line: none;
+		max-width: 60vw;
+		-ms-flex-item-align: center;
+		    align-self: center;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 60%;
+		        flex: 1 1 60%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-around;
-		align-content: space-around;	
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row nowrap;
+		        flex-flow: row nowrap;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-ms-flex-line-pack: justify;
+		    align-content: space-between;	
 	}
 
 	.cart {
-		flex: 1 1 25%;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 5%;
+		        flex: 1 1 5%;
 		max-width: 7vw;
 	}
 
@@ -618,25 +879,51 @@ a:hover {
 
 	.footer {
 		padding: 2.5rem 2rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-content: center;
-		align-items: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row nowrap;
+		        flex-flow: row nowrap;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-ms-flex-line-pack: center;
+		    align-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 	
 		.footer__address {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-flow: column nowrap;
-			justify-content: space-between;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-flow: column nowrap;
+			        flex-flow: column nowrap;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
 		}
 		
 		.social {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-flow: column nowrap;
-			justify-content: space-around;
-			align-items: flex-start;
-			align-content: space-between;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-flow: column nowrap;
+			        flex-flow: column nowrap;
+			-ms-flex-pack: distribute;
+			    justify-content: space-around;
+			-webkit-box-align: start;
+			    -ms-flex-align: start;
+			        align-items: flex-start;
+			-ms-flex-line-pack: justify;
+			    align-content: space-between;
 		}
 
 		.social span {
@@ -646,6 +933,9 @@ a:hover {
 
 @media all and (min-width: 1240px) {
 
+	.navigation{
+		max-width: 50vw;
+	}
 	.about p {
 		padding: 1rem 12rem;
 		line-height: 175%;

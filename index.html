@@ -26,7 +26,8 @@
         <li><a href="#featured">Featured</a></li>
         <li><a href="#updates">Updates</a></li>
      </ul>
-    <img class="cart" src="images/cart-icon.svg" alt="Shopping Bag">
+
+    <div><img class="cart" src="images/cart-icon.svg" alt="Shopping Bag"><p class="count">0</p></div>
   </nav>
 
 <section class="banner">
@@ -48,51 +49,57 @@
   <div class="shop__womens"><a href="womens.html">Women's</a></div> 
 </section>
 
-
 <section class="featured" id="featured">
   <h2><span class="featured__most-loved">Most-Loved</span> <span class="featured__products">Featured</span></h2>
   <div>
     <ul class="main-carousel">
-    
       <li class="carousel-cell"><img src="images/blue-silk-dress.jpg" alt="Blue silk dress">
         <p>Dresses</p>
         <h3>Blue Silk Dress</h3>
         <p>$169.00</p>
+        <p><button class="add-to-cart" type="submit">Add to Cart</button></p>
       </li>  
       <li class="carousel-cell"><img src="images/stretch-knit-dress.jpg" alt="Stretch knit dress">
         <p>Dresses</p>
         <h3>Stretch Knit Dress</h3>
         <p>$169.00</p>
+        <p><button class="add-to-cart" type="submit">Add to Cart</button></p>
       </li>  
       <li class="carousel-cell"><img src="images/cotton-blue-shirt.jpg" alt="Cotton blue shirt">
         <p>Shirts</p>
         <h3>Cotton Blue Shirt</h3>
         <p>$89.00</p>
+        <p><button class="add-to-cart" type="submit">Add to Cart</button></p>
       </li>   
       <li class="carousel-cell"><img src="images/cotton-yellow-tshirt.jpg" alt="Cotton yellow tshirt">
         <p>Shirts</p>
         <h3>Cotton Yellow Tshirt</h3>
         <p>$69.00</p>
+        <p><button class="add-to-cart" type="submit">Add to Cart</button></p>
       </li>  
       <li class="carousel-cell"><img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
         <p>Dresses</p>
         <h3>Checked Stretch Dress</h3>
         <p>$129.00</p>
+        <p><button class="add-to-cart" type="submit">Add to Cart</button></p>
       </li>
       <li class="carousel-cell"><img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
         <p>Bags</p>
         <h3>Blue Hipster Backpack</h3>
         <p>$69.00</p>
+        <p><button class="add-to-cart" type="submit">Add to Cart</button></p>
       </li>
       <li class="carousel-cell"><img src="images/demin-overall-shorts.jpg" alt="demin overall shorts">
         <p>Demin</p>
         <h3>Demin Overall Shorts</h3>
         <p>$89.00</p>
+        <p><button class="add-to-cart" type="submit">Add to Cart</button></p>
       </li>
       <li class="carousel-cell"><img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
         <p>Dresses</p>
         <h3>Pink Dotted Dress</h3>
         <p>$99.00</p>
+        <p><button class="add-to-cart" type="submit">Add to Cart</button></p>
       </li>
     </ul> 
   </div>
@@ -102,12 +109,11 @@
     <h2><span class="updates__sign-up">Sign-up for</span><span class="updates__updates"> Updates</span></h2>
     <p>Stay updated on our lates product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
     
-    <div class="form"><form method="post"> 
-        <input type="email" name="your email" placeholder="Your Email" />
+    <div class="form"><form id="form"> 
+        <input type="email" id="#text-input" name="your email" placeholder="Your Email" alt="type your email to subscribe" />
         <button class="btn" type="submit" name="subscribe" value="Subscribe">Subscribe</button>
     </form></div>
   </section>
-
 
 <footer class="footer">
   <address>
