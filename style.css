@@ -144,13 +144,31 @@ body {
 	max-width: 100%;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
-	color: #2d2d2d;
+	color: #db3a26;
+}
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	clip: auto !important;
+	display: block;
+	height: auto;
+	left: 5px;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* above all content */
 }
 
 h1 h2 h3 {
 	font-family: 'Playfair Display', serif;
 	font-size: 2.5rem;
-	color: #2d2d2d;
+	color: #db3a26;
 	text-align: center;
 }
 
@@ -170,7 +188,7 @@ h1 h2 h3 {
 
 .navigation {
 	-ms-flex-item-align: center;
-	    align-self: center;
+	align-self: center;
 	text-transform: uppercase;
 	font-size: 1.25rem;
 }
@@ -180,7 +198,8 @@ a:link {
 	text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
 	color: #b64036;
 }
 
@@ -412,6 +431,7 @@ a:hover {
 
 	.shop__womens {
 		padding: 8rem 0;
+		background-color: #000;
 		background: 
 		-webkit-gradient(
 			linear, 
@@ -437,7 +457,7 @@ a:hover {
 	}
 
 	.featured {
-		padding: 3rem;
+		padding: 0 0 3rem 0;
 	}
 	
 		.featured h2 {
@@ -476,13 +496,14 @@ a:hover {
 		.featured button {
 			background-color: #000;
 			color: #fff;
-			border: 1px solid #000;
+			border: 1px solid;
 			border-radius: 100px;
 		}
 
 .updates {
 	color: #fff;
 	padding: 2rem 0;
+	background-color: black;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -532,7 +553,7 @@ a:hover {
 	}
 
 .form {
-	border: 5px solid #fff;
+	border: 5px solid;
 	border-radius: 100px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -575,7 +596,7 @@ a:hover {
 		line-height: 300%;
 	}
 
-	.footer a {
+	.footer__address a {
 		text-decoration: underline;
 		color: #fff;
 	}
@@ -586,6 +607,11 @@ a:hover {
 
 	.address {
 		color: #969696;
+	}
+
+	.social a {
+		color: #fff;
+		text-decoration: none;
 	}
 
 /* ----- Breakpoints Below -----*/
@@ -683,7 +709,7 @@ a:hover {
 	}
 
 .featured {
-	padding: 20rem auto;
+	padding: 3rem 0;
 }	
 
 	.carousel-cell {
@@ -758,9 +784,17 @@ a:hover {
 		max-width: 100%;
 	}
 
-	.hidden {
-		visibility: hidden;
-		font-size: 5px;
+	li .fa {
+		padding: 15px;
+		font-size: 1.25rem;
+	}
+
+	.screen-reader-text-mobile {
+		clip: rect(1px, 1px, 1px, 1px);
+		position: absolute !important;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
 	}
 }
 
@@ -792,7 +826,7 @@ a:hover {
 		-ms-flex-line-pack: center;
 		    align-content: center;
 		max-width: 100%;
-		padding: 1.5rem 1.5rem;
+		padding: .5rem 1.25rem;
 	}
 	
 	.logo {
@@ -800,7 +834,7 @@ a:hover {
 		    -ms-flex: 1 1 35%;
 		        flex: 1 1 35%;
 		max-width: 17vw;
-		max-height: 12vw;
+		max-height: 10vh;
 	}
 	
 	.navigation {
@@ -830,7 +864,7 @@ a:hover {
 		-webkit-box-flex: 1;
 		    -ms-flex: 1 1 5%;
 		        flex: 1 1 5%;
-		max-width: 7vw;
+		max-width: 6vw;
 	}
 
 	.about p {
@@ -933,7 +967,8 @@ a:hover {
 
 @media all and (min-width: 1240px) {
 
-	.navigation{
+	.navigation {
+		font-size: 1.5rem;
 		max-width: 50vw;
 	}
 	.about p {

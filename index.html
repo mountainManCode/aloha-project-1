@@ -12,9 +12,6 @@
         <link rel="stylesheet" href="style.css" media="all and (min-width: 600px)">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
-        <script src="https://use.fontawesome.com/06f0143a9f.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
     </head>
 <body>
   
@@ -109,10 +106,10 @@
     <h2><span class="updates__sign-up">Sign-up for</span><span class="updates__updates"> Updates</span></h2>
     <p>Stay updated on our lates product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
     
-    <div class="form"><form id="form"> 
-        <input type="email" id="#text-input" name="your email" placeholder="Your Email" alt="type your email to subscribe" />
-        <button class="btn" type="submit" name="subscribe" value="Subscribe">Subscribe</button>
-    </form></div>
+    <form class="form"> 
+        <input type="email" id="#text-input" name="your email" placeholder="Your Email" />
+        <button class="btn" id="button" type="submit" name="subscribe" value="Subscribe">Subscribe</button>
+    </form>
   </section>
 
 <footer class="footer">
@@ -122,23 +119,25 @@
         <p>Powered by HTML and CSS.</p>
       </li>
       <li><span class="address__spacing">604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></span></li>
-      <li><span class="address">1490 W Broadway
-        <p>Vancouver, BC, Canada</p></span>
+      <li><span class="address">1490 W Broadway</span>
+        <p><span class="address">Vancouver, BC, Canada</span></p>
       </li>
     </ul>
   </address>
   
   <div>
     <ul class="social">
-      <li><i class="fa fa-facebook" aria-hidden="true"></i><span class="hidden">    Facebook</span></li>
-      <li><i class="fa fa-twitter" aria-hidden="true"></i><span class="hidden">Twitter</span></li>
-      <li><i class="fa fa-instagram" aria-hidden="true"></i><span class="hidden">  Instagram</span></li>
-      <li><i class="fa fa-pinterest" aria-hidden="true"></i><span class="hidden">  Pinterest</span></li>
-      <li><i class="fa fa-google-plus" aria-hidden="true"></i><span class="hidden">Google+</span></li>
+      <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i><span class="screen-reader-text-mobile"> Facebook</span></a></li>
+      <li><a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i><span class="screen-reader-text-mobile">Twitter</span></a></li>
+      <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i><span class="screen-reader-text-mobile">Instagram</span></a></li>
+      <li><a href="https://www.pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i><span class="screen-reader-text-mobile">Pinterest</span></a></li>
+      <li><a href="https://plus.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i><span class="screen-reader-text-mobile">Google+</span></a></li>
     </ul>
   </div>
 </footer>
-
-<script src="scripts.js"></script>
+  <script src="https://use.fontawesome.com/06f0143a9f.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>  
+  <script src="scripts.js"></script>
 </body>
 </html>

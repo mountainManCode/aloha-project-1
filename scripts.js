@@ -12,10 +12,11 @@ $(function() {
   $('.main-carousel').flickity({
     cellAlign: 'left',
     contain: 'true',
-    accessibility: 'true',
-    resize: 'true',
-    freeScroll: 'true',
-    wrapAround: 'true',
+    accessibility: true,
+    resize: true,
+    freeScroll: true,
+    wrapAround: true,
+    prevNextButtons: false,
   });
 
 //Smooth Scrolling - (css-tricks.com)
@@ -49,12 +50,28 @@ $(function() {
   });
 
 //email validation
-  $('#form').on('submit', function(event) {
-    event.preventDefault();
-    if ( $('#text-input').val() == '' ) {
-      alert('You missed the field.');
-    } else {
-      alert('Thanks for subscribing!');
-    }
+$("#button").on('click', function(event) {
+  event.preventDefault();
+  console.log("working?")
+  var email = $('input').val();
+      var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+      event.preventDefault();
+      console.log('User submitted the email address ' + email);
+
+      if (filter.test(email)) {
+    alert('Thank you for subscribing, ' + email + '!');
+  
+      } else {
+          alert('Please enter a valid E-Mail address.');
+      }
+  });
+
+
+    //skip link bug fix
+  $(function() {
+    $("a[href^='#']").not("a[href='#']").click(function() {
+      $("#"+$(this).attr("href").slice(1)+"").focus();
+    });
   });
 });
+

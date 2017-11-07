@@ -4,14 +4,16 @@
 
   I implemented a 'mobile-first' approach with responsive layout with flexbox and css3 grids integrated in. 
 
+  ![Aloha Apparel Screen Shot](images/aloha-apparel.png "Aloha Apparel")
+
 ## Built With
 
-* [HTML5]
-* [CSS3] (Flexbox, Grids)
-* [Font Awesome] (fontawesome.io) 
-* [Javascript]
-* [JQuery]
-* [Flickity] (https://flickity.metafizzy.co/) Responsive Carousel.
+* HTML5
+* CSS3 (Flexbox, Grids)
+* Font Awesome (fontawesome.io) 
+* Javascript
+* JQuery
+* Flickity - Responsive Carousel.
 
 ## Authors
 
